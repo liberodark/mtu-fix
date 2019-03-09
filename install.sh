@@ -36,6 +36,12 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 app=mtu
 
 #==============================================
+# INSTALL NET-TOOLS
+#==============================================
+
+apt install -y net-tools
+
+#==============================================
 # INSTALL SERVICE
 #==============================================
 echo Install $app service
