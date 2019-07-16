@@ -40,6 +40,7 @@ app=mtu
 #==============================================
 
 apt install -y net-tools
+yum install -y net-tools
 
 #==============================================
 # INSTALL SERVICE
@@ -52,7 +53,7 @@ Description=$app
 After=network.target
 
 [Service]
-WorkingDirectory=$final_path
+WorkingDirectory=/sbin/
 User=root
 Group=users
 Type=simple
